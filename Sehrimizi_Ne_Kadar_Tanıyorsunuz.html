@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sehrimizi_Ne_Kadar_Tanıyorsunuz</title>
+</head>
+<body>
+    
+
+    <div class="menu" style="margin-left: 220px;">
+      <ul>
+        <li><a href="Anasayfa.html" class="one">ANA SAYFA</a></li>
+        <li><a href="İlçeler.html" class="two">İLÇELER</a></li>
+        <li><a href="Konaklama_Yerleri.html" class="three">KONAKLAMA YERLERİ</a></li>
+        <li><a href="Şehre_Özgü_Yiyecekler.html" class="four">ŞEHRE ÖZGÜ YİYECEKLER</a></li>
+        <li><a href="Tarihce.html" class="five">TARİHÇE</a></li>
+        <li><a href="Tarihi_Ve_Gezilecek_Yerler.html" class="six">TARİHİ VE GEZİLECEK YERLER</a></li>
+        <li><a href="Sehrimizi_Ne_Kadar_Tanıyorsunuz.html" class="seven aktif">ŞEHRİMİZİ NE KADAR TANIYORSUNUZ</a></li>
+        <li><a href="İletişim.html" class="eight">İLETİŞİM</a></li>
+    </ul>
+    
+    </div> 
+    
+    
+
+    <script>
+      function reviewProducts() {
+        window.open("", "Review Products", "height=500,width=500");
+        window.document.write("Tüm Soruları Cevaplamalısın!!");
+      }
+      </script>
+
+
+    <h1>Şehrimizi Ne Kadar Tanıyorsunuz?</h1>
+
+<form id="quiz-form">
+  <h2>Soru 1</h2>
+  <p style="text-align: center;">Aşağıdakilerden hangisi Yozgat şehrine özgüdür?</p>
+  <input type="radio" name="q1" value="A">Kesme Çorbası<br>
+  <input type="radio" name="q1" value="B">Nohutlu Pilav<br>
+  <input type="radio" name="q1" value="C">Adana Kebabı<br>
+  <input type="radio" name="q1" value="D">Arabaşı<br>
+  
+  <h2>Soru 2</h2>
+  <p style="text-align: center;">Aşağıdakilerden hangisi Yozgat'ta konaklanılacak yerlerden birisi değildir?</p>
+  <input type="radio" name="q2" value="A">Saffron Otel<br>
+  <input type="radio" name="q2" value="B">Diva Otel<br>
+  <input type="radio" name="q2" value="C">Çamlık Otel<br>
+  <input type="radio" name="q2" value="D">Yılmaz Otel<br>
+  
+  <h2>Soru 3</h2>
+  <p style="text-align: center;">Aşağıdakilerden hangisi Yozgat'ın ilçesidir?</p>
+  <input type="radio" name="q3" value="A">Sorgun<br>
+  <input type="radio" name="q3" value="B">Gebze<br>
+  <input type="radio" name="q3" value="C">Bebek<br>
+  <input type="radio" name="q3" value="D">Fatih<br>
+
+  <h2>Soru 4</h2>
+  <p style="text-align: center;">Aşağıdakilerden hangisi Yozgat'ın tarihcesi hakkında doğru değildir?</p>
+  <input type="radio" name="q4" value="A">Aligar höyügünde 5000 sene öncesine ait eserler bulunmuştur.<br>
+  <input type="radio" name="q4" value="B">Hitit'lerin sınırları içerisinde en kalabalik yerleşim merkezlerinden biridir.<br>
+  <input type="radio" name="q4" value="C">Sene 2000'den sonra İç Anadoluda bulunan en kalabalık şehridir.<br>
+  <input type="radio" name="q4" value="D">İç Anadolu Bölgesi'nin Orta Kızılırmak Bölümü'nde Bozok Platosu üzerinde yer almaktadır.<br>
+  
+  <h2>Soru 5</h2>
+  <p style="text-align: center;">Aşağıdakilerden hangisi Yozgat'ta gezilebilecek tarihi yerlerden biridir?</p>
+  <input type="radio" name="q5" value="A">Selimiye Camii<br>
+  <input type="radio" name="q5" value="B">Çapanoğlu Camii<br>
+  <input type="radio" name="q5" value="C">Sultan Ahmet Camii<br>
+  <input type="radio" name="q5" value="D">Fatih Camii<br>
+  
+ 
+  
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+<script>
+  const quizForm = document.getElementById('quiz-form');
+  quizForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let numCorrect = 0;
+    if (quizForm.elements.q1.value === 'D') numCorrect++;
+    if (quizForm.elements.q2.value === 'B') numCorrect++;
+    if (quizForm.elements.q3.value === 'A') numCorrect++;
+    if (quizForm.elements.q4.value === 'C') numCorrect++;
+    if (quizForm.elements.q5.value === 'B') numCorrect++;
+
+
+    alert(`You got ${numCorrect} out of 5 questions correct!`);
+  });
+</script>
+
+
+<script src="timer.js"></script>
+</body>
+</html>

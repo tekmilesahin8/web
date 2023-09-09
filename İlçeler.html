@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>İlçeler</title>
+
+</head>
+<body>
+  
+
+  
+
+
+
+
+
+<div class="menu">
+    <ul>
+        <li><a href="Anasayfa.html" class="one">ANA SAYFA</a></li>
+        <li><a href="İlçeler.html" class="two aktif">İLÇELER</a></li>
+        <li><a href="Konaklama_Yerleri.html" class="three">KONAKLAMA YERLERİ</a></li>
+        <li><a href="Şehre_Özgü_Yiyecekler.html" class="four">ŞEHRE ÖZGÜ YİYECEKLER</a></li>
+        <li><a href="Tarihce.html" class="five">TARİHÇE</a></li>
+        <li><a href="Tarihi_Ve_Gezilecek_Yerler.html "class="six">TARİHİ VE GEZİLECEK YERLER</a></li>
+        <li><a href="Sehrimizi_Ne_Kadar_Tanıyorsunuz.html" class="seven">ŞEHRİMİZİ NE KADAR TANIYORSUNUZ</a></li>
+        <li><a href="İletişim.html" class="eight">İLETİŞİM</a></li>
+    </ul>          
+
+</div>
+</head>
+    
+<body bgcolor="#DEF5E5" vlink="red" alink="purple"> <br>
+
+
+
+
+
+      
+    <div id="county-list">
+        <div class="county">Yerköy</div> 
+        <div class="county">Aydıncık</div>
+        <div class="county">Boğazlıyan</div>
+        <div class="county">Sarıkaya</div>
+        <div class="county">Çayıralan</div>
+        <div class="county">Çekerek</div>
+        <div class="county">Kadışehri</div>
+        <div class="county">Saraykent</div>
+        <div class="county">Çandır</div>
+        <div class="county">Sorgun</div>
+        <div class="county">Şefaatli</div>
+        <div class="county">Yenifakılı</div>
+        <div class="county">Akdağmadeni</div>
+      </div>
+      
+      <button id="sort-button">Alfabetik Olarak Sırala</button>
+      
+      <script>
+        const sortButton = document.getElementById('sort-button');
+        sortButton.addEventListener('click', sortCounties);
+      
+        function sortCounties() {
+          
+          const countyList = document.getElementById('county-list');
+          
+          let counties = Array.from(countyList.children);
+         
+          counties.sort((a, b) => a.textContent.localeCompare(b.textContent));
+          
+          countyList.innerHTML = '';
+          
+          counties.forEach(county => countyList.appendChild(county));
+        }
+      </script>
+
+
+    
+    <h2>İLÇELER</h2>
+    <p>Yozgat ili 13 ilçeye sahiptir.Bunlar aşağıda gösterilmektedir</p>
+
+    <div class="bolum">
+
+        <h3>Akdağmadeni</h3>
+        <p>İklimi karasal iklim ile Karadeniz iklimi arasında bir tipe sahiptir. İlçe yaylada olduğundan Orta Anadolu'nun iklimine de benzerliği vardır. Yazları çok sıcak; kışları aşırı soğuk olmaz. Kar yağışı, Yozgat'ta olduğu gibi, Kasım ayının ortalarını bulur, Nisan ayına dek yerde kaldığı olur. Yıllık yağış miktarları ortalamada 478-500 milimetredir. Yazın sıcaklık 20-25 derece arasında değişmektedir.</p>
+        <img src="akdağ.jpg" >
+        <br><br>
+    </div>
+    <div class="bolum">
+
+        <h3>Aydıncık</h3>
+        <p>Aydıncık Yozgat`a 105 kilometre uzaklıktadır. Çoğunluğu İç Anadolu Bölgesi`nde yer alan Yozgat`ın Çekerek ilçesiyle birlikte Orta Karadeniz Bölgesi`nde bulunan iki ilçesinden biridir. Kuzeybatısında Çorum ili, kuzeyinde Amasya ili, doğusunda Çekerek ilçesiyle güneyinde Sorgun ilçesi bulunmaktadır.
+        </p>
+        <img src="aydıncık.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Boğazlıyan</h3>
+        <p>Boğazlıyan Nerede? Boğazlıyan Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Boğazlıyan ilçesinin nüfusu yaklaşık olarak 34 bindir. Boğazlıyan’a doğuda Çandır ve Çayıralan, kuzeyde Sarıkaya ve Merkez, kuzeybatıda Şefaatli ve batıda da Yenifakılı ilçeleriyle birlikte güneybatıda Nevşehir’in Avanos, güneyde de Kayseri’nin Kocasinan ve Felahiye ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 1.515 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 95 kilometredir.
+        </p>
+        <img src="bogazlıyan.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Çandır</h3>
+        <p>Çandır ilçesinin nüfusu yaklaşık olarak 4 bindir. Çandır’a doğusunda Çayıralan ve batısında Boğazlayan ilçeleriyle birlikte güneyinde Kayseri’nin Felahiye ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 205 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 122 kilometredir.  
+        </p>
+        <img src="çandır.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Çayıralan</h3>
+        <p>Çayıralan Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Çayıralan ilçesinin nüfusu yaklaşık olarak 12 bindir. Çayıralan’a kuzeydoğuda Akdağmadeni, kuzeybatıda Sarıkaya ve batıda Çandır ilçeleriyle birlikte güneyde Kayseri’nin Özvatan ve Felahiye, doğuda da Sivas’ın Gemerek ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 995 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 112 kilometredir.
+        </p>
+        <img src="çayıralan.jpg" >
+        <br><br>
+    </div>
+
+    
+    <div class="bolum">
+
+        <h3>Çekerek</h3>
+        <p>Çekerek Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Ancak ilçe Karadeniz Bölgesi sınırları dahilindedir. Çekerek ilçesinin nüfusu yaklaşık olarak 19 bindir. Çekerek’e kuzeybatısında Aydıncık, güneybatısında Sorgun, güneydoğusunda Saraykent ve doğusunda Kadışehri ilçeleriyle birlikte kuzeydoğusunda da Tokat’ın Zile ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 790 kilometrekaredir. İl merkezine olan uzaklığı 90 kilometredir.
+        </p>
+        <img src="cekerek.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Kadışehri</h3>
+        <p>Kadışehri Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Ancak ilçe Karadeniz Bölgesi sınırları dahilindedir. Kadışehri ilçesinin nüfusu yaklaşık olarak 11 bindir. Kadışehri’ne batıda Çekerek, güneyde Saraykent ve Akdağmadeni ilçeleriyle birlikte güneydoğuda Sivas’ın Yıldızeli, kuzey ve doğuda da Tokat’ın Sulusaray ve Zile ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 472 kilometrekaredir. İl merkezine olan uzaklığı 118 kilometredir.
+        </p>
+        <img src="kadışehri.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Saraykent</h3>
+        <p>Saraykent Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır ancak ilçenin kuzey bölgesinin bir kısmı Karadeniz sınırları içinde kalmaktadır. Saraykent ilçesinin nüfusu yaklaşık olarak 12 bindir. Saraykent’e kuzeyinde Yozgat’ın Çekerek ve Kadışehri, doğusunda ve güneyinde Akdağmadeni ve batısında da Sorgun ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 319 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 80 kilometredir.
+        </p>
+        <img src="saraykent.jpg" >
+        <br><br>
+    </div>
+
+
+    <div class="bolum">
+
+        <h3>Sarıkaya</h3>
+        <p>Sarıkaya Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Sarıkaya ilçesinin nüfusu yaklaşık olarak 33 bindir. Sarıkaya’ya kuzeyinde Sorgun, kuzeydoğusunda Akdağmadeni, güneydoğusunda Çayıralan, güneyinde ve batısında da Boğazlayan ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 1.018 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 100 kilometredir.
+        </p>
+        <img src="sarıkaya.jpg" >
+        <br><br>
+    </div>
+    
+
+    <div class="bolum">
+
+        <h3>Sorgun</h3>
+        <p>Anadolu bölgesinde yer alan Yozgat’ın ilçesi olan Sorgun, Yozgat’ın yerleşim yerlerinden biridir. Sorgun İlçesi yüzölçümü yaklaşık olarak 1.768 km2’dir. Sorgun ilçesinin rakımı ise 1.083 m olarak hesaplanmıştır. Sorgun ilçesinin Kuzeyinde Aydıncık ve Çekerek, doğusunda Saraykent ve Akdağmadeni, batısında Yozgat Merkez, Güneyinde ise Sarıkaya ilçeleri bulunmaktadır. Sorgun ilçesi Karasal iklimine sahiptir. Söz konusu olan ilçe tarım için elverişli alanları bulunmaktadır ve yatırım için uygun alanlar barındırmaktadır. Sorgun İçesinin turizm noktaları da vardır. Ayrıca tarihi, doğal ve kültürel gezilecek yerleri de barındırmaktadır
+        </p>
+        <img src="Sorgun.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Şefaatli</h3>
+        <p>İç Anadolu bölgesinde yer alan Yozgat’ın ilçesi olan Şefaatli, Yozgat’ın yerleşim yerlerinden biridir. Şefaatli İlçesi yüzölçümü yaklaşık olarak 882 km2’dir. Şefaatli ilçesinin rakımı ise 914 m olarak hesaplanmıştır. Şefaatli ilçesinin Kuzeyinde ve doğusunda Yozgat Merkez, batısında Yerköy ve Kırşehir, Güneyinde ise Nevşehir ve Yenifakılı ilçeleri bulunmaktadır. Şefaatli ilçesi Karasal iklimine sahiptir. Söz konusu olan ilçe tarım için elverişli alanları bulunmaktadır ve yatırım için uygun alanlar barındırmaktadır.
+        </p>
+        <img src="şefaatli.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Yenifakılı</h3>
+        <p>Yenifakılı Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Yenifakılı ilçesinin nüfusu yaklaşık olarak 5 bindir. Yenifakılı’ya doğuda Boğazlayan ve kuzeybatıda Şefaatli ilçeleriyle birlikte batı ve güneybatıda da Nevşehir’in Kozaklı ve Avanos ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 390 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 41 kilometredir.
+        </p>
+        <img src="yenifakılı.jpg" >
+        <br><br>
+    </div>
+
+    <div class="bolum">
+
+        <h3>Yerköy</h3>
+        <p>Yerköy Türkiye’nin İç Anadolu Bölgesinde bulunan Yozgat kentinde yer almaktadır. Yerköy ilçesinin nüfusu yaklaşık olarak 36 bindir. Yerköy’e doğuda Merkez, güneydoğuda Şefaatli ilçeleriyle birlikte batıda Kırşehir’in Çiçekdağı ve Akçakent, kuzeybatıda Kırıkkale’nin Delice ve kuzeyde de Çorum’un Sungurlu ilçeleri komşudur. İlçenin yüzölçümü yaklaşık olarak 1.164 kilometrekaredir. İlçenin il merkezine olan uzaklığı yaklaşık 41 kilometredir.
+        </p>
+        <img src="yerköy.jpg" >
+        <br><br>
+    </div>
+
+    <br><br>
+    <div class="bolum">
+        <h3 style="text-align: center">İlçelerin Haritadaki Konumu:</h3>
+        <br>
+        <img src="ilceler.jpg" >
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>

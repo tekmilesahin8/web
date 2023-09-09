@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Şehre_Özgü_Yiyecekler</title>
+
+
+
+
+    <style>
+      /* Define the pop-up container */
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+        display: none; /* make the pop-up hidden by default */
+      }
+
+      /* Add some visual effects to the pop-up */
+      .popup:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* Define the style for the "X" close button */
+      .popup .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      var reviewed = 0;
+      
+      function hoverImage(event) {
+        reviewed++;
+
+        if (reviewed === document.images.length) {
+          // Get the pop-up container
+          var popup = document.getElementById("review-popup");
+
+          // Show the pop-up
+          popup.style.display = "block";
+        }
+      }
+      //create a function for the close button 
+      function closePopup() {
+        var popup = document.getElementById("review-popup");
+        popup.style.display = "none";
+      }
+    </script>
+
+</head>
+
+
+
+
+
+<!--<body>
+    <div class="bolum>
+      <img src="kebap.jpg" class="fotolar" alt="" >
+      <img src="arabaşı.jpg" class="fotolar" alt="">
+      <img src="bulama.jpg" class="fotolar" alt="" >
+      <img src="börek.jpg" class="fotolar" alt="" >
+      <img src="bazlama.jpg" class="fotolar" alt="" >
+      <img src="çörek.jpg" class="fotolar" alt="" >
+      <img src="madımak.jpg" class="fotolar" alt="" >
+      <img src="kabak.jpg" class="fotolar" alt="" >
+      <img src="tatlı.jpg" class="fotolar" alt="" >
+    </div>
+
+
+   
+
+
+    <div id="popup" style="display: none;">
+      <p>Tüm ürünleri incelediniz!</p>
+    </div>
+
+    <script>
+      var images = document.querySelectorAll(".fotolar");
+      var popup = document.querySelector("#popup");
+
+      images.forEach(function(image) {
+        image.addEventListener("mouseover", function() {
+          popup.style.display = "block";
+        });
+      });
+    </script>
+  </body>-->
+
+
+
+<body bgcolor="#DEF5E5  " vlink="red" alink="purple">
+
+
+    
+
+
+    <div class="menu">
+      <ul>
+        <li><a href="Anasayfa.html" class="one">ANA SAYFA</a></li>
+        <li><a href="İlçeler.html" class="two">İLÇELER</a></li>
+        <li><a href="Konaklama_Yerleri.html" class="three">KONAKLAMA YERLERİ</a></li>
+        <li><a href="Şehre_Özgü_Yiyecekler.html" class="four aktif">ŞEHRE ÖZGÜ YİYECEKLER</a></li>
+        <li><a href="Tarihce.html" class="five">TARİHÇE</a></li>
+        <li><a href="Tarihi_Ve_Gezilecek_Yerler.html" class="six">TARİHİ VE GEZİLECEK YERLER</a></li>
+        <li><a href="Sehrimizi_Ne_Kadar_Tanıyorsunuz.html" class="seven">ŞEHRİMİZİ NE KADAR TANIYORSUNUZ</a></li>
+        <li><a href="İletişim.html" class="eight">İLETİŞİM</a></li>
+    </ul>
+    
+    </div> 
+    
+    
+    <br><br>
+
+    
+    <h3 style="text-align: center">ŞEHRE ÖZGÜ YİYECEKLER</h3> 
+    <br>
+    <p>Yozgat iline özgü yemekler aşağıda açıklanmıştır:</p> <br>
+    
+        
+        <div class="bolum">
+    <h3> Testi Kebabı</h3>
+        <p>Yozgat Testi Kebabı'nın tarihi çok eskidir. Zamanın Bozok Sancak Beyi, gelen misafirlerine özel 
+            olarak bu kebabı hazırlatıp sunmuştur. Yapılışı çok farklı olan bu kebap testilerde pişmektedir, 
+            yılda yaklaşık 40.000 testi kullanılmaktadır. Bu kebabın tadına doyulmaz, yiyen bir daha yemek ister.
+             Bu kadar özel bir tadı olan kebabın püf noktaları vardır. </p>
+        <img src="kebap.jpg" width="500px" height="300px"> 
+        <p>Testi kebabı tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/2866709624003429331">Testi Kebabı Tarifi</a> </p>
+        
+        <br>
+        <br>
+</div>
+
+<div class="bolum">
+        <h3>Arabaşı</h3>
+        <p>Yozgat Arabaşı; arabaşı çorbası ve ayrı yapılan arabaşı hamurundan oluşan bir üründür. Çorbayı diğer çorbalardan 
+            ayıran en önemli özellik ekmek ile birlikte değil, beraberinde hamur (çiğnenmeden) yutularak ve kış mevsiminde 
+            içilmesidir. Arabaşını diğerlerinden ayıran diğer bir özellik ise söz konusu çorbanın üretiminde kullanılan etin doğal 
+            ortamda yetişen veya yaylalarda doğal besinlerle beslenerek yetiştirilen tavuk, hindi veya kazlardan elde edilmiş olmasıdır.
+            Yozgat ili ile bütünleşmiş olan arabaşının tarihi oldukça eskilere dayanmaktadır. Arabaşı denildiğinde akla ilk gelen 
+            ilin Yozgat olması, arabaşının orijinin Yozgat ili olduğunun bir göstergesidir.</p> 
+        <img src="arabaşı.jpg" width="500px" height="300px">
+        <p>Arbaşı tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/15380482171981864698">Arabaşı Tarifi</a></p>
+        
+        <br>
+        <br>
+
+</div>
+
+<div class="bolum">
+        <h3>Bulama Çorbası</h3>
+        <p>Yozgat yöresine ait ,güzel ve besleyici bir çorbadır. Yayla Çorbasına çok benziyor ,bunun içerisine 
+            pirinç yerine yarma (buğday) var ve bir de nohut  konuluyor.Arkadaşım Özlem, bu çorbanın kışın sıcak sıcak 
+            içildiği gibi yazın soğuk olarak da içilebiliyor.</p>
+        <img src="bulama.jpg" width="500px" height="300px">
+        <p>Bulama çorbası tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/10188213278802162803">Bulama Çorbası Tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+<div class="bolum">
+        <h3>Yozgat Böreği</h3>
+        <p>İçerisinde hem sebze hem de pastırma bulunan ve yöresel bir lezzet olan Yozgat böreği, kahvaltı için bu 
+            çıtır çıtır akşam yemeği için muhteşem bir ara sıcak olacak. Sevdiklerinizle beş çayında afiyetle yiyebileceğiniz
+             Yozgat böreği ister fırında isterseniz tavada yapılıyor. Yozgat'ın meşhur lezzetlerin başında gelen bu börek, 
+             kolaylıkla yapılabiliyor. </p> <br>
+        <img src="börek.jpg" width="500px" height="300px">
+        <p>Yozgat böreği tarifine ulaşmak için tıklayınız: <a href="https://yandex.com.tr/video/preview/15280600437823270619">Yozgat Böreği Tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+<div class="bolum">
+        <h3>Bazlama</h3>
+        <p>Yozgat'ın meşhur yemeklerinden biri olan bazlamayı yapmak için bunlar gereki:Normal hamurumuzu beze elde
+             edecek şekilde yoğurup beze haline getiriyoruz. Büyükçe yufka şeklinde açıyoruz.
+             Sacımızın üstünde iki yönlü pişirip üzerine tereyağ sürüp tulum peyniri ile sunum yapıyoruz.</p>
+        <img src="bazlama.jpg" width="500px" height="300px">
+        <p>Bazlama tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/12514335950032295523">Bazlama tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+<div class="bolum">
+        <h3>Parmak Çörek</h3>
+        <p>Yozgat’a özel bir ekmek türü olup gerçek lezzet için ustalık hizmetinin tam bir profesyonellik gerektirdiği
+             hamur kıvamının ve pişme kıvamı ile usullerinin çok iyi bilinmesi gereken bir gıda maddesidir. En önemli 
+             özelliği ise hiç bir katkı maddesi içermemesi ve taş fırında odun ateşiyle yalnız ateşe maruz kalmadan, 
+             ısısıyla pişirilmesidir. Ayrıca üretimde sadece hazır maya kullanılmamakta belli bir miktarda da ekşi maya 
+             olarak tabir edilen bir gün önce üretimde kullanılan hamurdan kullanılmaktadır. Bu kullanılan ekşi maya, parmak
+             çöreğe has bir tat vermekte ve pişme sırasında kalın kabuk yapıp parmak çöreğin çıtır olmasını sağlamaktadır.</p> 
+        <img src="çörek.jpg" width="500px" height="300px">
+        <p>Yozgat çöreği tarfine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/5192068097482029228">Yozgat Çöreği Tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+<div class="bolum">
+        <h3>Madımak Yemeği</h3>
+        <p>Yozgat' a ait bir yemek olup,Madımak otundan yararlanılarak yapılan bu yemek, Yozgat’ta hemen hemen her evde pişen yemeklerden biridir. 
+            Etli yada etsiz dilediğinizce şekillendirebileceğiniz yemeğin, şehirde pişen sulu yemeklerin hası olduğunu 
+            belirtmekte fayda var.</p> 
+        <img src="madımak.jpg" width="500px" height="300px">
+        <p>Madımak yemeği tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/9541421815410396081">Madımak Yemeği Tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+<div class="bolum">
+        <h3>Kabak Çiçeği Dolması</h3>
+        <p>Yozgat'ın meşhur yemeklerinden biri olan çiçek dolması Ege Bölgesinde de yaygın olarak tüketilen çiçek dolması yemeiği yapılışı da oldukça kolaydır.
+             Cucurbia ailesinin yenilebilir bir türü olan kabak çiçeklerinin içi çıkarıldıktan sonra iç malzemesi 
+             karıştırılıp kabak çiçeklerinin içine doldurulur.</p> 
+        <img src="kabak.jpg" width="500px" height="300px" >
+        <p>Kabak çiçeği dolması tarifine ulaşmak için linke tıklayınız: <a href="https://yandex.com.tr/video/preview/7990121280007805470">Kabak Çiçeği Dolması Tarifi</a></p>
+        
+        <br><br>
+</div>
+
+
+
+
+
+
+  <div class="bolum">
+        <h3>Yumurta Tatlısı</h3>
+        <p>Yozgat yumurta tatlısı zengin- fakir her evde temin edilebilen malzemeyle yapılan çok hafif
+             ve çabuk hazırlanan efsane bir lezzettir.Tatlı soğukken, ılık şerbet üzerine dökülür. Yarım saat dinlendirilir. Lezzetini aldığınızda bırakmak istemeyeceksiniz
+             ve tüketilir.</p>
+        <img src="tatlı.jpg" width="500px" height="300px" class="mouseover">
+        <p>Yumurta tatlısı tarifine ulaşmak için linke tıklayınız:  <a href="https://yandex.com.tr/video/preview/12814580749900075742">Yumurta Tatlısı Tarifi</a></p>
+      </div> 
+      
+      
+      <script>
+        const mouseover=document.querySelector('.mouseover')
+        mouseover.addEventListener('mouseover',function(){
+          alert('Tüm ürünleri görüntülediniz..')
+        })
+       </script>
+        <script src="timer.js"></script>
+</body>
+</html>

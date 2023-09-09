@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yozgat</title>
+
+
+
+
+    <body>
+      <div class="menu">
+        <ul>
+            <li><a class="aktif one" href="Anasayfa.html">ANA SAYFA</a></li>
+            <li><a href="İlçeler.html" class="two">İLÇELER</a></li>
+            <li><a href="Konaklama_Yerleri.html" class="three">KONAKLAMA YERLERİ</a></li>
+            <li><a href="Şehre_Özgü_Yiyecekler.html" class="four">ŞEHRE ÖZGÜ YİYECEKLER</a></li>
+            <li><a href="Tarihce.html" class="five">TARİHÇE</a></li>
+            <li><a href="Tarihi_Ve_Gezilecek_Yerler.html" class="six">TARİHİ VE GEZİLECEK YERLER</a></li>
+            <li><a href="Sehrimizi_Ne_Kadar_Tanıyorsunuz.html" class="seven">ŞEHRİMİZİ NE KADAR TANIYORSUNUZ</a></li>
+            <li><a href="İletişim.html" class="eight">İLETİŞİM</a></li>
+        </ul>
+    
+    </div> 
+    <h1 style="margin-top: 20px; text-align: center; font-size: 50px; margin-bottom: 30px;">Yozgat</h1>
+
+  <div class="carousel-one">
+        <div class="mySlides fade-In">
+            <div class="number-text">1/10</div>
+            <img src="lavanta.jpg"/>
+            <div class="caption-text"></div>
+        </div>
+        <div class="mySlides fade-In">
+            <div class="number-text">2/10</div>
+            <img src="yozgat2.jpg" />
+            <div class="caption-text"></div>
+        </div>
+        <div class="mySlides fade-In">
+          <div class="number-text">3/10</div>
+          <img src="sarıkaya.jpg" />
+          <div class="caption-text"></div>
+      </div>
+        <div class="mySlides fade-In">
+            <div class="number-text">4/10</div>
+            <img src="akdağ.jpg" />
+            <div class="caption-text"></div>
+        </div>
+        <div class="mySlides fade-In">
+          <div class="number-text">4/10</div>
+          <img src="yozgat3.jpg" />
+          <div class="caption-text"></div>
+      </div>
+      <div class="mySlides fade-In">
+        <div class="number-text">5/10</div>
+        <img src="yozgat4.jpg" />
+        <div class="caption-text"></div>
+    </div>
+    <div class="mySlides fade-In">
+      <div class="number-text">6/10</div>
+      <img src="yozgat5.jpg" />
+      <div class="caption-text"></div>
+  </div>
+  <div class="mySlides fade-In">
+    <div class="number-text">7/10</div>
+    <img src="yozgat6.jpg" />
+    <div class="caption-text"></div>
+</div>
+<div class="mySlides fade-In">
+  <div class="number-text">8/10</div>
+  <img src="yozgat7.jpg" />
+  <div class="caption-text"></div>
+</div>
+<div class="mySlides fade-In">
+  <div class="number-text">9/10</div>
+  <img src="yozgat8.jpg" />
+  <div class="caption-text"></div>
+</div>
+<div class="mySlides fade-In">
+  <div class="number-text">10/10</div>
+  <img src="yozgat9.jpg" />
+  <div class="caption-text"></div>
+</div>
+    
+     
+        <!--Next and previous buttons start-->
+        <a class="prev-slide">&#10094;</a>
+        <a class="next-slide">&#10095;</a>
+        <!--Next and previous buttons end-->
+    </div>
+    <br />
+     
+    <!--dots start-->
+    <div class="dots">
+        <span class="dot dot1"></span>
+        <span class="dot dot2"></span>
+        <span class="dot dot3"></span>
+        <span class="dot dot4"></span>
+        <span class="dot dot5"></span>
+        <span class="dot dot6"></span>
+        <span class="dot dot7"></span>
+        <span class="dot dot8"></span>
+        <span class="dot dot9"></span>
+        <span class="dot dot10"></span>
+    </div>
+    <!--dots end-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+   
+  <script>
+      //carousel start
+   
+      var slideIndex = 1;
+      showSlides(slideIndex);
+   
+      //Next and previous buttons start
+      $(".prev-slide").click(function() {
+          plusSlides(-1);
+      });
+   
+      $(".next-slide").click(function() {
+          plusSlides(1);
+      });
+   
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+      //Next and previous buttons end
+   
+      //dots start
+      $(".dot1").click(function() {
+          currentSlide(1);
+      });
+      $(".dot2").click(function() {
+          currentSlide(2);
+      });
+      $(".dot3").click(function() {
+          currentSlide(3);
+      });
+      $(".dot4").click(function() {
+          currentSlide(4);
+      });
+      $(".dot5").click(function() {
+          currentSlide(5);
+      });
+      $(".dot6").click(function() {
+          currentSlide(6);
+      });
+      $(".dot7").click(function() {
+          currentSlide(7);
+      });
+      $(".dot8").click(function() {
+          currentSlide(8);
+      });
+      $(".dot9").click(function() {
+          currentSlide(9);
+      });
+      $(".dot10").click(function() {
+          currentSlide(10);
+      });
+
+   
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+      }
+      //dots end
+      
+      
+      function showSlides(n) {
+          var i;
+          var slides = $(".mySlides");
+          var dots = $(".dot");
+          if (n > slides.length) {
+              slideIndex = 1;
+          }
+          if (n < 1) {
+              slideIndex = slides.length;
+          }
+          for (var i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+   
+          for (var i = 0; i < dots.length; i++) {
+              dots[i].className.replace("active", "");
+              dots[i].classList.remove("active");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+   
+   
+      //auto slides start
+      /*
+      var slideIndex = 0;
+      showSlides();
+   
+      function showSlides() {
+          var i;
+          var slides = $(".mySlides");
+   
+          for (var i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+   
+          slideIndex++;
+   
+          if (slideIndex > slides.length) {
+              slideIndex = 1;
+          }
+   
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 5000); // 5 saniyede bir resim değişecek
+      }
+      */
+      //auto slides end
+      
+      //carousel end
+  </script>
+
+
+
+
+
+  </body>
+  
+
+
+
+
+    <style>
+        /* Define the styles for the two themes */
+        .theme-1 {
+          background-color: rgb(127, 175, 212);
+          color: rgb(197, 82, 82);
+        }
+        .theme-2 {
+          background-color: rgb(171, 108, 168);
+          color: white;
+        }
+        /* Define the styles for the two font options */
+        .font-1 {
+          font-family: Arial, sans-serif;
+        }
+        .font-2 {
+          font-family: Georgia, serif;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Tema Ve Font Seç:</h1>
+      <p>Tema seçiniz:</p>
+      <form>
+        <input type="radio" name="theme" value="theme-1" onclick="setTheme(this.value)"> Theme 1<br>
+        <input type="radio" name="theme" value="theme-2" onclick="setTheme(this.value)"> Theme 2<br>
+      </form>
+      <p>Font Seçiniz:</p>
+      <form>
+        <input type="radio" name="font" value="font-1" onclick="setFont(this.value)"> Font 1<br>
+        <input type="radio" name="font" value="font-2" onclick="setFont(this.value)"> Font 2<br>
+      </form>
+      <script>
+        
+        function setTheme(theme) {
+          document.body.className = theme;
+        }
+        function setFont(font) {
+          document.body.className = font;
+        }
+      </script>
+    
+    <!-- <style>
+        *{margin: 0; padding: 0;}
+        .menu{width: 800px; height: 48px; background: #000; margin: 0 auto;border-bottom: 4px solid red; }
+        .menu ul li {float: left; list-style-type: none;}
+        .menu ul li a{color: #fff; font: 17px Arial; text-decoration: none; display: block; padding: 14px 15px;}
+        .menu ul li a:hover{
+            background: red;
+            color: yellow;
+        }
+    </style>-->
+</head>
+<body background="ana.jpg">
+
+   <!-- <div id="slider-wrapper">
+        <div class="slider">
+          <a class="img-bir">
+            <img src="yozgat1.jpg">
+            <span>Category</span>
+          </a>
+          <a class="img-iki">
+            <img src="yozgat2.jpg">
+            <span>Category</span>
+          </a>
+          <a class="img-uc">
+            <img src="sarıkaya.jpg">
+            <span>Category</span>
+          </a>
+          <a class="img-dort">
+            <img src="aydıncık.jpg">
+            <span>Category</span>
+          </a>
+          <a class="img-bes">
+            <img src="ana1.jpg">
+            <span>Category</span>
+          </a>
+        </div>
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+      
+      <style>
+        .slider {
+          display: flex;
+          overflow-x: auto;
+        }
+        .slider a {
+          flex: 0 0 auto;
+          width: 700px;
+          height: 400px;
+          margin-right: 16px;
+        }
+        .slider img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+      
+      <script>
+        const slider = document.querySelector('.slider');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+      
+        prevBtn.addEventListener('click', () => {
+          slider.scrollLeft -= 700;
+        });
+      
+        nextBtn.addEventListener('click', () => {
+          slider.scrollLeft += 700;
+        });
+      </script>
+    -->
+
+    <script src="file:///C:/Users/%C5%9Fahin/Desktop/3.S%C4%B1n%C4%B1f%201.D%C3%B6nem%20Dersleri/201104025_ODEV1_TekmileSahin/201104025_ODEV1/201104025_ODEV1/Anasayfa.html"></script>
+    
+
+
+
+ <br>
+    <br><br>
+    <p style="text-align: start; padding: 30px; font-size: 18px;">Yozgat ili İç Anadolu’nun Orta Kızılırmak bölümünde, bir ilimizdir ve merkezi de aynı adla anılır. Yozgat şehri, Bozok yaylasının yüksek tepelerinden birinin eteğine kurulmuştur. İl alanı, doğudan Akdağlar, güneyden ve batıdan Delice ırmağı vadisi, kuzeyden ise Deveci dağlarıyla çevrilidir. 
+        <br>
+         Bölge arazi itibarıyla genellikle dağlar ve vadilerle kaplıdır. Merkez ilçede yıllık sıcaklık ortalaması 9 derece civarındadır. Kuzeyindeki Çekerek vadisinde havalar biraz ılıman geçse de, İç Anadolu’nun tipik karasal iklimi hakimdir. Yüzölçümü: 14.123 km2' dir. Büyük bölümü İç Anadolu Bölgesi’nin Orta Kızılırmak, küçük bir bölümü Karadeniz Bölgesi’nin Orta Karadeniz Bölümü’nde kalan il ve bu ilin merkezi kenttir. 30°02′-36°09′ doğu boylamları, 38°54′-40°15′ kuzey enlemleri arasında kalan il; kuzeyden Çorum, Amasya, Tokat, doğudan Sivas, güneyden Kayseri, Nevşehir, batıdan Kırşehir, Kırıkkale illeriyle çevrilidir. Ekonomi, büyük ölçüde tarım ve hayvancılığa dayanır. 
+         <br>
+         Tahıllardan buğday, arpa, çavdar, mısır; baklagillerden nohut, fasulye, mercimek; endüstri bitkilerinden şekerpancarı; yağlı tohumlardan susam; yumru bitkilerinden kurusoğan, sarmısak, patates yetiştirilen başlıca tarla bitkileridir. Sebze üretimi, genelde yerel tüketimi karşılamaya yöneliktir.
+    </p>
+     <br>
+
+
+     <img src="ana3.jpg"  >
+     <img src="ana1.jpg" style="padding-left: 15px" >
+     <br><br>
+     <img src="ana4.jpg"  >
+     <img src="ana.jpg" style="padding-left: 15px" >
+
+
+     <script src="timer.js"></script>
+</body>
+</html>
